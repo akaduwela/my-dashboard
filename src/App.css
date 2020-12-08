@@ -47,9 +47,18 @@ nav {
   font-size: 3vh;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 75%;
+}
+
+li {
+  list-style: none;
 }
