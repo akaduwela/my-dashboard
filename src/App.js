@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav";
+import WeatherApp from "./components/weather/WeatherApp";
 import TodoApp from "./components/todo/TodoApp";
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
           <Route exact path="/">
             <h1>Welcome to my dashboard</h1>
           </Route>
-          <Route exact path="/weather"></Route>
+          <Route exact path="/weather">
+            <WeatherApp />
+          </Route>
           <Route exact path="/todolist">
             <TodoApp />
           </Route>
